@@ -181,7 +181,8 @@ bot.hears(/трубецкого/i, (ctx) => ctx.replyWithHTML(text.text[0][5]))
 bot.hears(/нар/i, (ctx) => ctx.replyWithHTML(text.text[0][6]))
 bot.hears(/попова/i, (ctx) => ctx.replyWithHTML(text.text[0][7]))
 bot.hears(/свято/i, (ctx) => ctx.replyWithHTML(text.text[0][8]))
-bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][8]))
+bot.hears(/театр/i, (ctx) => ctx.replyWithHTML(text.text[0][9]))
+bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][10]))
 
 
 bot.launch();
