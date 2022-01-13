@@ -115,7 +115,7 @@ bot.command ('main_menu', async (ctx)=> {
 
 
     // Обработка кнопки из категории "Границы платной зоны"
-    addActionBot('btn_category2', './img/10.png', text.text[2][0])
+    addActionBot('btn_category2', false, text.text[2][0])
 
 
     // Обработка кнопки из категории "Общая информация"
@@ -182,7 +182,9 @@ bot.hears(/нар/i, (ctx) => ctx.replyWithHTML(text.text[0][6]))
 bot.hears(/попова/i, (ctx) => ctx.replyWithHTML(text.text[0][7]))
 bot.hears(/свято/i, (ctx) => ctx.replyWithHTML(text.text[0][8]))
 bot.hears(/театр/i, (ctx) => ctx.replyWithHTML(text.text[0][9]))
-bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][10]))
+bot.hears(/победы/i, (ctx) => ctx.replyWithHTML(text.text[0][10]))
+bot.hears(/пугач/i, (ctx) => ctx.replyWithHTML(text.text[0][11]))
+bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][12]))
 
 
 bot.launch();
