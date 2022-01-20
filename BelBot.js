@@ -184,7 +184,8 @@ bot.hears(/свято/i, (ctx) => ctx.replyWithHTML(text.text[0][8]))
 bot.hears(/театр/i, (ctx) => ctx.replyWithHTML(text.text[0][9]))
 bot.hears(/победы/i, (ctx) => ctx.replyWithHTML(text.text[0][10]))
 bot.hears(/пугач/i, (ctx) => ctx.replyWithHTML(text.text[0][11]))
-bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][12]))
+bot.hears(/дегтяр/i, (ctx) => ctx.replyWithHTML(text.text[0][12]))
+bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][13]))
 
 
 bot.launch();
