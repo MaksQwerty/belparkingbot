@@ -185,10 +185,10 @@ bot.hears(/театр/i, (ctx) => ctx.replyWithHTML(text.text[0][9]))
 bot.hears(/побед/i, (ctx) => ctx.replyWithHTML(text.text[0][10]))
 bot.hears(/пугач/i, (ctx) => ctx.replyWithHTML(text.text[0][11]))
 bot.hears(/дегтяр/i, (ctx) => ctx.replyWithHTML(text.text[0][12]))
-bot.hears(/собор/i, (ctx) => ctx.replyWithHTML(text.text[0][12]))
+bot.hears(/собор/i, (ctx) => ctx.replyWithHTML(text.text[0][13]))
 bot.hears(/губкин/i, (ctx) => ctx.replyWithHTML(text.text[0][14]))
 bot.hears(/вокзал/i, (ctx) => ctx.replyWithHTML(text.text[0][15]))
-bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][15]))
+bot.on('text', (ctx) => ctx.replyWithHTML(text.text[0][16]))
 
 
 bot.launch();
